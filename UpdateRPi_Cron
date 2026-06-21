@@ -1,0 +1,15 @@
+# /etc/cron.d/: system-wide crontab
+# Unlike Any Other Crontab You Don't Have To Run The 'Crontab' Command To Install The New Version.
+# When You Edit This File And Files In /etc/cron.d.
+# These Files Also Have Username Fields, That None Of The Other Crontabs Do.
+
+# Job Definition:
+# .---------------- Minute (0 - 59)
+# |  .------------- Hour (0 - 23)
+# |  |  .---------- Day Of Month (1 - 31)
+# |  |  |  .------- Month (1 - 12) Or Jan,Feb,Far,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec
+# |  |  |  |  .---- Day Of Week (0 - 7) (Sunday=0 Or 7) OR Mon,Tue,Wed,Thu,Fri,Sat,Sun
+# |  |  |  |  |  .- User-Name Of Command To Be Executed
+# *  *  *  *  *  * 
+0 0 * * * root  apt update && apt dist-upgrade -y && apt autoremove -y && apt-get clean && apt-get autoclean
+0 5 * * * root  reboot --force

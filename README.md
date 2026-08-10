@@ -25,9 +25,7 @@ sudo nmtui
 sudo systemctl daemon-reload
 
 # Enable/Start wifi-powermanagement-off Service
-sudo systemctl enable wifi-powermanagement-off.service\
-sudo systemctl start wifi-powermanagement-off.service
+sudo systemctl enable wifi-powermanagement-off.service && sudo systemctl start wifi-powermanagement-off.service
 
 # Enable/Start wifi-powersave-off Service
-sudo systemctl enable wifi-powersave-off.service\
-sudo systemctl start wifi-powersave-off.service
+sudo systemctl enable wifi-powersave-off.service && sudo systemctl start wifi-powersave-off.service

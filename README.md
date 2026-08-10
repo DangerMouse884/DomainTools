@@ -13,7 +13,7 @@ sudo apt install podman -y
 sudo apt install dnsmasq -y
 
 # Backup Original Dnsmasq Config File
-cp /etc/dnsmasq.conf ~/dnsmasq.conf.backup
+sudo cp /etc/dnsmasq.conf /etc/dnsmasq.conf.backup
 
 # Keep Systemd Manager Running Even After Log Out
 loginctl enable-linger

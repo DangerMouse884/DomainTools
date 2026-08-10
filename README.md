@@ -1,10 +1,13 @@
-# RaspberryPi DomainTools ReadMe
+# RaspberryPi Network Server ReadMe
 
 # Update RaspberryPi
 sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove -y
 
 # Install rpi-connect-ota package
 sudo apt install rpi-connect-ota -y
+
+# Install PodMan package
+sudo apt install podman -y
 
 # Install Needed Dnsmasq Packages
 sudo apt install dnsmasq -y

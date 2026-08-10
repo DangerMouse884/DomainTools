@@ -1,4 +1,6 @@
-#Disable WiFi Power Management
+# Disable WiFi Power Management
+# /etc/systemd/system/wifi-powermanagement-off.service
+
 [Unit]
 Description=Disable WiFi Power Management
 After=network.target

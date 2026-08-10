@@ -1,5 +1,5 @@
-#Disable WiFi Power Save
-sudo nano /etc/systemd/system/wifi-powersave-off.service
+# Disable WiFi Power Save
+# /etc/systemd/system/wifi-powersave-off.service
 [Unit]
 Description=Disable WiFi Power Save
 After=network.target

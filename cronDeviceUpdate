@@ -8,5 +8,5 @@
 # |  |  |  |  .---- Day Of Week (0 - 7) (Sunday=0 Or 7) OR Mon,Tue,Wed,Thu,Fri,Sat,Sun
 # |  |  |  |  |  .- User-Name Of Command To Be Executed
 # *  *  *  *  *  * 
-0 0 * * * root  apt update && apt dist-upgrade -y && apt autoremove -y && apt-get clean && apt-get autoclean
-0 5 * * * root  systemctl --force reboot
+0 0 * * SUN root  apt update && apt dist-upgrade -y && apt autoremove -y && apt-get clean && apt-get autoclean
+0 4 * * SUN root  systemctl --force reboot

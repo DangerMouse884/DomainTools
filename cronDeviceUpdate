@@ -9,4 +9,4 @@
 # |  |  |  |  |  .- User-Name Of Command To Be Executed
 # *  *  *  *  *  * 
 0 0 * * * root  apt update && apt dist-upgrade -y && apt autoremove -y && apt-get clean && apt-get autoclean
-0 5 * * * root  reboot --force
+0 5 * * * root  systemctl --force reboot
